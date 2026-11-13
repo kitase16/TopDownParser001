@@ -1,0 +1,31 @@
+#define Slice
+
+pre:
+	class,struct,union,enum,interface,namespace,template,procedure,ruetin,lambada,using,public,private,protected,static,const,volatile,inline,virtual,override,new,delete,this,slice,Assembly,main;
+main:
+	function,0,1,-1;
+function:
+	(,),{,},void,Arguments,Argc,name,void,Argv,Envp,ExitCode,ExitUrn,if,block,break,else,for,while,do,loop,var,let,any,variant,types,<,>,:,;,as,[,],ret,urn,...,;
+void:
+	types;
+types:
+	tag,name,integer,real,boolean,character,string,text,object,assembly,urn,literal,types...;
+literal:
+	[types...],[types[integer]],[integer],{};
+container:
+	stack,que,array,map,list,graph,
+command:
+	if,block,for,loop,do,while,break,continue,yeild
+
+
+#define Sem
+
+let main = Function(Types... name)-> ExitUrn{
+
+	var name = Let as types;
+	//var Name = let as literal;//
+
+	command&paramata;
+
+	ret ExitCode;
+}
